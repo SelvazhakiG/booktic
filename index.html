@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTicks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="summernote-bs4.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+</head>
+<!-- <body background="./g.jpg" >-->
+    <body>
+    <div class="container">
+        <div calss="head">
+            <img src="./fly.jpg" alt="Fly">
+        </div>
+        
+                   <header>
+                    <div class="tic" ><a href="index.html" ><h1>BookTicks&nbsp<i>!</i></h1></a></div>
+            </header>
+                <nav>
+            <ul>
+                <li><a href="Login">Login</a></li>
+                <li><a href="Shop">Shop</a></li>
+                <li><a href="Hotels">Hotels</a></li>
+                <li><a href="SignUp">SignUp</a></li>
+            </ul>
+        </nav>
+<!--                 <a href="index.html"><h1>BookTicks</h1></a></div>
+ -->            </div>
+<!--         <div class="tic"><a href="index.html" ><h1>BookTicks</h1></a></div>
+ --></div>
+</div>
+        <main>
+        <form id="form" action="#" method="post">
+            <div class="placediv">
+                <div>
+                <label for="from">From:</label><br>
+                <select name="" id="from">
+                    <option value="selectcountry">Select Country</option>
+                    <option value="">Australia</option>
+                    <option value="">Canada</option>
+                    <option value="">India</option>
+                    <option value="">United States of America</option>
+                </select>
+            </div>
+            <div>
+                <label for="to">To:</label><br>
+                <select name="" id="to">
+                    <option value="selectcountry">Select Country</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="united states of america">United States of America</option>
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="trip" id="oneway">
+                <label for="oneway">One-Way</label><br>
+                <span><input type="radio" name="trip" id="roundtrip"></span>
+                <label for="oneway">Round-Trip</label>
+            </div>
+        </div>
+        <hr>
+            <div class="dates"><div>
+                <label for="departure">Date Of Departure:</label><br>
+                <input type="date" name="departure" id="departure" min="2022-07-19">
+            </div>
+            <div>
+                <label for="return">Date Of Return:</label><br>
+                <input type="date" name="return" id="return" min="2022-07-21">
+            </div>
+        <div>
+            <label for="check">SaveforLater</label>
+            <input type="checkbox" name="check" id="check">
+
+        </div></div>
+        <hr>
+            <div class="details"><div>
+                <label>Passengers:</label>
+                <!-- <label for="name">Name</label>
+                <label for="age">Age</label>
+                <label for="">Gender</label> -->
+            </div>  
+            <div>
+            <label for="passenger1">Passenger 1:</label>
+            <input type="text" name="name1" id="passengername1" placeholder="Name">
+            <input type="text" name="age1" id="passenger1" placeholder="Age">
+            <input type="email" name="mail1" id="passenger1" placeholder="E-mail" required>
+            <input type="number" name="phone" id="phone" placeholder="Mobile Number">
+            <!-- <input type="tel" name="phone" id="passenger1" pattern="[0-9]{10}" placeholder="Mobile Number" required> -->
+            <div>
+            <input type="radio" name="passenger1" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="passenger1" id="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="passenger1" id="prefer">
+            <label for="prefer">Prefer not to say</label>
+            </div>
+<!--             <label for="address">Address:</label> -->
+            <textarea name='editor1' id="" cols="22" rows="2" placeholder="Address"></textarea>
+            </div>
+            <div>
+                <label for="passenger2">Passenger 2:</label>
+                <input type="text" name="name1" id="passengername2" placeholder="Name">
+                <input type="text" name="age1" id="passenger2" placeholder="Age">
+                <input type="email" name="mail1" id="passenger2" placeholder="E-mail" required>
+                <!--<input type="text" name="phone" id="passenger2">-->
+                <input type="number" name="phone" id="phone" placeholder="Mobile Number">
+                <!-- <input type="tel" name="phone" id="passenger1" pattern="[0-9]{10}" placeholder="Mobile Number"> -->
+                <input type="radio" name="passenger2" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="passenger2" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="passenger2" id="prefer">
+                <label for="prefer">Prefer not to say</label>
+                <!-- <label for="address">Address:</label> -->
+                <textarea name='editor1' id="summernote" cols="22" rows="2" placeholder="Address"></textarea>
+            </div>
+            <div class="more">
+                <button type="button" class="btn btn-info">Add More Passengers</button>
+            </div></div>
+            <div class="book">                        
+            <div class="submit">
+                <button type="button" class="btn btn-warning">Cancel</button>
+                <button type="submit" class="btn btn-primary">BookTics Now!</button>
+
+            </div></div>
+            
+        </form>
+        </main>
+        </div>
+        <script src="./bookticks.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            CKEDITOR.replace('editor1');
+    </script>
+    <script src="summernote-bs4.js"></script>
+    <script>$('$summernote').summernote();
+    </script>
+
+
+</body>
+</html>
